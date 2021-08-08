@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Tutorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+  <main>
+    <h1>Hello Git</h1>
+    <p>This is the first file in my new Git Repo.</p>
+    
+    <pre>
+      <code>git --version</code>
+    </pre>
+    
+    <h2>Configure Git</h2>
+    <p>
+      Note: Use global to set the username and e-mail for every repository on your computer.
+      If you want to set the username/e-mail for just the current repo, you can remove global</p>
+    <pre>
+      <code>git config --global user.email "you@example.com"</code>
+      <code>git config --global user.name "Your Name"</code>
+    </pre>
+
+    <p></p>
+    <pre>
+      <code>git config --list</code>
+    </pre>
+
+    <h2>Initialize Git</h2>
+    <p>Initialize Git on that folder:</p>
+    <pre>
+      <code>git --init</code>
+    </pre>
+
+    <h2>Git Adding New Files</h2>
+    <p>README.md file that describes the repository (recommended for all repositories):</p>
+
+    <p>List the files in our current working directory:</p>
+    <pre>
+      <code>ls</code>
+    </pre>
+
+    <p>Then we check the Git status and see if it is a part of our repo:</p>
+    <pre>
+      <code>git status</code>
+      <code>git status --short</code>
+    </pre>
+    <p>
+      <strong>Note:</strong> Short status flags are:
+    </p>
+    <ul>
+      <li>?? - Untracked files</li>
+      <li>A - Files added to stage</li>
+      <li>M - Modified files</li>
+      <li>D - Deleted files</li>
+    </ul>
+
+    <h2>Git Add</h2>
+    <pre>
+      <code>git add &lt;file_name&gt;</code>
+      <code>git add .</code>
+      <code>git add --all (or) git add -A</code>
+      <code>git add *&lt;files_type&gt;</code>
+    </pre>
+
+    <h2>Git Reset</h2>
+    <p>Undo a git add</p>
+    <pre>
+      <code>git reset &lt;file_name&gt;</code>
+    </pre>
+
+    <h2>Git Commit</h2>
+    <p>
+      Since we have finished our work, we are ready move from <b>stage</b> to <b>commit</b> for our repo.<br>
+      When we <b>commit</b>, we should always include a message.
+    </p>
+    <pre>
+      <code>git commit -m "<i>message</i>"</code>
+    </pre>
+
+    <h2>Git Commit Log</h2>
+    <p>To view the history of commits for a repository, you can use the log command:</p>
+    <pre>
+      <code>git log</code>
+    </pre>
+
+    <h2>Git Help</h2>
+    <p>There are a couple of different ways you can use the help command in command line:</p>
+    <ul>
+      <li>git <u><i>command</i></u> -help -  See all the available options for the specific command</li>
+      <li>git help --all -  See all possible commands</li>
+    </ul>
+    <pre>
+      <code>git command -help</code>
+      <code>git help --all</code>
+    </pre>
+
+  </main>
+
+</body>
+</html>
